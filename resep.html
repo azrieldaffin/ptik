@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Nusantara - Infokan Resep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🍛</span>
+                <span class="logo-text">Infokan <span class="logo-accent">Resep</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="" class="nav-link">Tentang</a></li>
+                <li><a href="resep.html" class="nav-link active">Resep</a></li>
+                <li><a href="" class="nav-link">Kontak</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-tag">Koleksi Resep</span>
+            <h1 class="page-header-title">Resep Nusantara</h1>
+            <p class="page-header-desc">Pilih hidangan favoritmu, lalu lihat bahan dan langkah memasaknya secara lengkap.</p>
+        </div>
+    </header>
+
+    <!-- Recipes Section -->
+    <main class="recipes-section">
+        <div class="container">
+
+            <!-- Filter kategori (data-filter dipakai script.js) -->
+            <div class="filter-bar" role="group" aria-label="Filter kategori resep">
+                <button type="button" class="filter-btn active" data-filter="semua">Semua</button>
+                <button type="button" class="filter-btn" data-filter="makanan-berat">Makanan Berat</button>
+                <button type="button" class="filter-btn" data-filter="makanan-ringan">Makanan Ringan</button>
+                <button type="button" class="filter-btn" data-filter="minuman">Minuman</button>
+                <button type="button" class="filter-btn" data-filter="dessert">Dessert</button>
+            </div>
+            <p class="recipe-result" aria-live="polite">Menampilkan <strong id="recipeCount">8</strong> resep</p>
+
+            <div class="recipes-grid">
+
+                <!-- Resep 1 -->
+                <article class="recipe-card recipe-card-full" id="nasi-goreng" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/nasi-goreng.svg" alt="Nasi goreng spesial dengan telur mata sapi" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Nasi Goreng Spesial</h2>
+                        <p class="recipe-card-desc">Raja masakan Indonesia yang mendunia. Nasi goreng dengan bumbu rahasia yang membuat ketagihan.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 20 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="nasi-goreng">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 2 -->
+                <article class="recipe-card recipe-card-full" id="rendang" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/rendang.svg" alt="Rendang daging sapi dengan nasi putih" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Rendang Daging Sapi</h2>
+                        <p class="recipe-card-desc">Daging sapi dimasak perlahan dengan santan dan rempah hingga empuk, kering, dan beraroma dalam.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 180 menit</span>
+                            <span class="meta-item">📊 Sulit</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="rendang">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 3 -->
+                <article class="recipe-card recipe-card-full" id="soto-ayam" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/soto-ayam.svg" alt="Soto ayam dengan bihun dan telur rebus" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Soto Ayam Lamongan</h2>
+                        <p class="recipe-card-desc">Sup ayam berkuah kuning yang hangat dan gurih, dengan taburan koya khas Lamongan.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 60 menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="soto-ayam">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 4 -->
+                <article class="recipe-card recipe-card-full" id="gado-gado" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/gado-gado.svg" alt="Gado-gado dengan saus kacang" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Gado-gado Jakarta</h2>
+                        <p class="recipe-card-desc">Salad khas Indonesia dengan siraman saus kacang yang gurih dan nikmat. Sehat dan mengenyangkan.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 30 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="gado-gado">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 5 -->
+                <article class="recipe-card recipe-card-full" id="bakso" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/bakso.svg" alt="Bakso sapi dengan mie kuning" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Bakso Sapi Malang</h2>
+                        <p class="recipe-card-desc">Bola-bola daging sapi yang kenyal dalam kuah kaldu gurih bersama mie, bihun, dan tahu.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 90 menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="bakso">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 6 -->
+                <article class="recipe-card recipe-card-full" id="sate-ayam" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/sate-ayam.svg" alt="Sate ayam dengan saus kacang dan lontong" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Sate Ayam Madura</h2>
+                        <p class="recipe-card-desc">Tusukan daging ayam yang dipanggang sempurna dengan bumbu kacang manis yang khas Indonesia.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 45 menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="sate-ayam">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 7 -->
+                <article class="recipe-card recipe-card-full" id="es-cendol" data-category="minuman">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Minuman</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/es-cendol.svg" alt="Es cendol dengan santan dan gula merah" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Es Cendol Dawet</h2>
+                        <p class="recipe-card-desc">Butiran cendol hijau kenyal dengan santan segar dan gula merah cair. Menyegarkan di cuaca panas.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 25 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="es-cendol">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 8 -->
+                <article class="recipe-card recipe-card-full" id="pisang-goreng" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/pisang-goreng.svg" alt="Pisang goreng krispi" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Pisang Goreng Crispy</h2>
+                        <p class="recipe-card-desc">Pisang matang berbalut tepung renyah, digoreng keemasan. Camilan sederhana yang selalu digemari.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 15 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="pisang-goreng">Lihat Detail</button>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Tampil kalau filter tidak punya hasil (mis. Dessert) -->
+            <p class="recipe-empty" id="recipeEmpty" hidden>Resep untuk kategori ini segera hadir. Coba kategori lain dulu, ya!</p>
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ada Resep Favorit Lain?</h2>
+                <p class="cta-desc">Koleksi kami terus bertambah. Nantikan resep-resep Nusantara berikutnya!</p>
+                <a href="index.html" class="btn btn-primary btn-lg">Kembali ke Beranda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4 class="footer-heading">Hubungi Kami</h4>
+                <ul class="footer-contact">
+                    <li>📧 info@infokanresep.id</li>
+                    <li>📞 +62 812 3456 789</li>
+                    <li>📍 Depok, Jawa Barat</li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Infokan Resep | Kelompok 2</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal detail resep (diisi oleh script.js) -->
+    <div class="modal" id="recipeModal" role="dialog" aria-modal="true" aria-label="Detail resep">
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Tutup detail resep">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
