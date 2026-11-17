@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
-                  <li><a href="index.html" class="nav-link active">Beranda</a></li>
 <body>
-  
+  <li><a href="index.html" class="nav-link active">Beranda</a></li>
+
 </body>
 
 </html>
