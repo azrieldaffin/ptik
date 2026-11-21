@@ -1,8 +1,274 @@
 <!DOCTYPE html>
 <html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Infokan Resep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <a href="index.html">Beranda</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🍛</span>
+                <span class="logo-text">Infokan <span class="logo-accent">Resep</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="tentang.html" class="nav-link active">Tentang</a></li>
+                <li><a href="resep.html" class="nav-link">Resep</a></li>
+                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu navigasi">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1 class="page-header-title fade-in">Tentang Kami</h1>
+            <p class="page-header-desc fade-in">Mengenal lebih dekat Dapur Nusantara dan tim di baliknya</p>
+            <div class="breadcrumb fade-in">
+                <a href="index.html">Beranda</a>
+                <span>/</span>
+                <span>Tentang</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-main-section">
+        <div class="container">
+            <div class="about-intro fade-in">
+                <div class="about-intro-content">
+                    <span class="section-tag">Siapa Kami?</span>
+                    <h2 class="section-title">Dapur Nusantara</h2>
+                    <p>Dapur Nusantara adalah sebuah platform digital yang didedikasikan untuk melestarikan dan memperkenalkan kekayaan kuliner Indonesia kepada generasi muda dan dunia. Kami percaya bahwa makanan bukan sekadar kebutuhan, melainkan jendela budaya yang menceritakan sejarah, tradisi, dan identitas bangsa Indonesia.</p>
+                    <p>Melalui website ini, kami mengumpulkan resep-resep autentik dari berbagai penjuru Nusantara, mulai dari hidangan sehari-hari hingga masakan khas daerah yang mungkin belum banyak dikenal. Setiap resep disajikan dengan langkah-langkah yang mudah dipahami, sehingga siapa pun dapat mencoba memasak di rumah.</p>
+                    <p>Website ini dibuat sebagai proyek tugas akhir mata kuliah <strong>Pengantar Teknologi Informasi dan Komunikasi (PTIK)</strong>, dengan harapan dapat memberikan manfaat nyata bagi masyarakat sekaligus menunjukkan penerapan teknologi web dalam kehidupan sehari-hari.</p>
+                </div>
+                <div class="about-intro-visual">
+                    <div class="about-image-placeholder" style="background: linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%);">
+                        <div class="about-image-text">
+                            <span class="about-emoji">🇮🇩</span>
+                            <p>Warisan Kuliner<br>Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="section vision-mission-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Tujuan Kami</span>
+                <h2 class="section-title">Visi & Misi</h2>
+            </div>
+            <div class="vm-grid">
+                <div class="vm-card fade-in">
+                    <div class="vm-icon">🔭</div>
+                    <h3 class="vm-title">Visi</h3>
+                    <p class="vm-text">Menjadi platform kuliner digital terdepan yang melestarikan dan memperkenalkan keberagaman masakan Indonesia kepada generasi muda dan dunia internasional, serta menginspirasi setiap orang untuk mencintai dan menjaga warisan kuliner Nusantara.</p>
+                </div>
+                <div class="vm-card fade-in">
+                    <div class="vm-icon">🎯</div>
+                    <h3 class="vm-title">Misi</h3>
+                    <ul class="vm-list">
+                        <li>Mengumpulkan dan mendokumentasikan resep-resep autentik dari seluruh Indonesia</li>
+                        <li>Menyajikan resep dengan cara yang mudah dipahami dan diikuti oleh semua kalangan</li>
+                        <li>Mengedukasi masyarakat tentang sejarah dan filosofi di balik setiap masakan</li>
+                        <li>Memanfaatkan teknologi digital untuk memperluas jangkauan kuliner Indonesia</li>
+                        <li>Membangun komunitas pecinta kuliner Nusantara yang aktif dan saling berbagi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Indonesian Cuisine -->
+    <section class="section why-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Mengapa Kuliner Indonesia?</span>
+                <h2 class="section-title">Kekayaan Rasa Nusantara</h2>
+                <p class="section-desc">Indonesia memiliki lebih dari 5.000 jenis masakan tradisional yang mencerminkan keberagaman budaya dan kekayaan alam.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-icon">🌿</div>
+                    <h3>Rempah-Rempah Melimpah</h3>
+                    <p>Indonesia dikenal sebagai negeri rempah. Kunyit, lengkuas, serai, jahe, dan ratusan rempah lainnya menjadi fondasi cita rasa masakan kita yang unik.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🏝️</div>
+                    <h3>Keberagaman Budaya</h3>
+                    <p>Dengan 17.000+ pulau dan ratusan suku bangsa, setiap daerah memiliki masakan khas yang mencerminkan budaya dan tradisi lokalnya.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🏆</div>
+                    <h3>Diakui Dunia</h3>
+                    <p>Rendang dinobatkan sebagai makanan terlezat di dunia. Banyak masakan Indonesia lainnya yang juga mendapat pengakuan internasional.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Pemersatu Bangsa</h3>
+                    <p>Makanan memiliki kekuatan untuk menyatukan. Di meja makan, perbedaan hilang dan kebersamaan tercipta melalui berbagi hidangan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Tim Kami</span>
+                <h2 class="section-title">Kelompok 2</h2>
+                <p class="section-desc">Mahasiswa yang berdedikasi untuk melestarikan kuliner Indonesia melalui teknologi.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #8B0000, #C41E3D);">
+                        <span>AR</span>
+                    </div>
+                    <h3 class="team-name">Ahmad Rizky</h3>
+                    <p class="team-role">Ketua Kelompok</p>
+                    <p class="team-desc">Bertanggung jawab atas koordinasi tim dan pengembangan konsep website.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #DAA520, #C41E3D);">
+                        <span>SP</span>
+                    </div>
+                    <h3 class="team-name">Siti Putri</h3>
+                    <p class="team-role">Desainer UI/UX</p>
+                    <p class="team-desc">Merancang tampilan visual dan pengalaman pengguna yang menarik dan intuitif.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #3E2723, #8B0000);">
+                        <span>BW</span>
+                    </div>
+                    <h3 class="team-name">Budi Wicaksono</h3>
+                    <p class="team-role">Pengembang Web</p>
+                    <p class="team-desc">Mengimplementasikan desain menjadi kode HTML, CSS, dan JavaScript yang fungsional.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #C41E3D, #DAA520);">
+                        <span>DN</span>
+                    </div>
+                    <h3 class="team-name">Dewi Nuraini</h3>
+                    <p class="team-role">Penulis Konten</p>
+                    <p class="team-desc">Menyusun resep, deskripsi, dan konten artikel yang informatif dan menarik.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #8B0000, #DAA520);">
+                        <span>FH</span>
+                    </div>
+                    <h3 class="team-name">Fajar Hidayat</h3>
+                    <p class="team-role">Peneliti Kuliner</p>
+                    <p class="team-desc">Mengumpulkan dan memverifikasi resep-resep autentik dari berbagai sumber terpercaya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="values-content fade-in">
+                <div class="section-header">
+                    <span class="section-tag">Nilai Kami</span>
+                    <h2 class="section-title">Apa yang Kami Pegang Teguh</h2>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <span class="value-icon">🔥</span>
+                        <h4>Autentisitas</h4>
+                        <p>Setiap resep dijaga keasliannya sesuai tradisi daerah asalnya.</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">📚</span>
+                        <h4>Edukasi</h4>
+                        <p>Kami tidak hanya berbagi resep, tapi juga pengetahuan di baliknya.</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">🤝</span>
+                        <h4>Kebersamaan</h4>
+                        <p>Memasak dan makan bersama adalah inti dari budaya kuliner kita.</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">🌱</span>
+                        <h4>Pelestarian</h4>
+                        <p>Menjaga agar resep tradisional tidak punah dimakan zaman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🍛</span>
+                        <span class="logo-text">Dapur <span class="logo-accent">Nusantara</span></span>
+                    </div>
+                    <p class="footer-desc">Menjelajahi dan melestarikan kekayaan kuliner Indonesia melalui resep-resep autentik dari berbagai daerah.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="resep.html">Resep Masakan</a></li>
+                        <li><a href="kontak.html">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kategori Resep</h4>
+                    <ul class="footer-links">
+                        <li><a href="resep.html">Makanan Berat</a></li>
+                        <li><a href="resep.html">Makanan Ringan</a></li>
+                        <li><a href="resep.html">Minuman</a></li>
+                        <li><a href="resep.html">Dessert</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Hubungi Kami</h4>
+                    <ul class="footer-contact">
+                        <li>📧 info@dapurnusantara.id</li>
+                        <li>📞 +62 812 3456 7890</li>
+                        <li>📍 Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dapur Nusantara. Dibuat dengan ❤️ oleh Kelompok 2 — UAS PTIK.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
