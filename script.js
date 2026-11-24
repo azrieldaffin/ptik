@@ -1,5 +1,5 @@
 /* ============================
-   DAPUR NUSANTARA - Main JavaScript
+   Infokan Resep - Main JavaScript
    ============================ */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -127,219 +127,513 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ---- Recipe Detail Modal ----
     var recipeData = {
-        'nasi-goreng': {
+        'ayam-bakar-kecap': {
             emoji: '🍚',
             gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
-            title: 'Nasi Goreng Spesial',
-            desc: 'Nasi goreng adalah hidangan nasi yang digoreng bersama bumbu dan bahan pelengkap. Masakan ini sudah mendunia dan menjadi ikon kuliner Indonesia yang paling dikenal. Setiap daerah di Indonesia memiliki variasi nasi goreng yang unik.',
-            time: '20 menit',
-            difficulty: 'Mudah',
-            servings: '2 porsi',
-            price: 'Rp 15.000',
-            ingredients: [
-                '2 piring nasi putih (lebih baik nasi dingin)',
-                '2 butir telur ayam',
-                '100 gram ayam, potong dadu kecil',
-                '3 siung bawang merah, iris tipis',
-                '2 siung bawang putih, cincang halus',
-                '2 sendok makan kecap manis',
-                '1 sendok makan saus tiram',
-                '1 sendok teh garam',
-                '½ sendok teh merica bubuk',
-                '2 batang daun bawang, iris',
-                'Minyak goreng secukupnya',
-                'Kerupuk dan acar sebagai pelengkap'
-            ],
-            steps: [
-                'Panaskan minyak goreng di wajan dengan api sedang. Tumis bawang merah dan bawang putih hingga harum dan layu.',
-                'Masukkan potongan ayam, aduk hingga ayam berubah warna dan matang sempurna.',
-                'Geser ayam ke pinggir wajan, pecahkan telur di tengah. Orak-arik telur hingga setengah matang.',
-                'Masukkan nasi putih, aduk rata dengan seluruh bahan. Pastikan nasi tidak menggumpal.',
-                'Tambahkan kecap manis, saus tiram, garam, dan merica. Aduk rata hingga bumbu meresap dan nasi berwarna merata.',
-                'Masukkan irisan daun bawang, aduk sebentar. Angkat dan sajikan selagi hangat.',
-                'Sajikan dengan pelengkap seperti telur mata sapi, kerupuk, irisan timun, dan tomat.'
-            ],
-            tips: 'Gunakan nasi yang sudah dingin atau nasi sisa semalam agar hasilnya lebih pulen dan tidak lengket. Api besar saat menggoreng nasi akan menghasilkan aroma dan rasa yang lebih nikmat.'
-        },
-        'rendang': {
-            emoji: '🥘',
-            gradient: 'linear-gradient(135deg, #3E2723 0%, #8B0000 50%, #C41E3D 100%)',
-            title: 'Rendang Daging Sapi',
-            desc: 'Rendang adalah masakan khas Minangkabau, Sumatera Barat yang telah dinobatkan oleh CNN sebagai makanan terlezat di dunia. Daging sapi dimasak perlahan dengan santan dan campuran rempah hingga kering dan berwarna cokelat kehitaman.',
-            time: '180 menit',
-            difficulty: 'Sulit',
-            servings: '6 porsi',
-            price: 'Rp 85.000',
-            ingredients: [
-                '1 kg daging sapi, potong dadu besar',
-                '800 ml santan kental dari 2 butir kelapa',
-                '10 buah cabai merah keriting',
-                '5 buah cabai merah besar',
-                '8 butir bawang merah',
-                '5 siung bawang putih',
-                '3 cm jahe, geprek',
-                '3 cm lengkuas, geprek',
-                '2 batang serai, memarkan',
-                '4 lembar daun jeruk',
-                '2 lembar daun kunyit',
-                '1 sendok teh garam',
-                'Santan cair 400 ml',
-                'Minyak goreng 3 sendok makan'
-            ],
-            steps: [
-                'Haluskan cabai merah keriting, cabai merah besar, bawang merah, bawang putih, dan jahe menggunakan blender atau ulek.',
-                'Panaskan minyak di wajan besar. Tumis bumbu halus bersama lengkuas, serai, daun jeruk, dan daun kunyit hingga harum.',
-                'Masukkan potongan daging sapi, aduk rata dengan bumbu. Masak hingga daging berubah warna di permukaannya.',
-                'Tuang santan cair terlebih dahulu, aduk rata. Masak dengan api sedang sambil sesekali diaduk agar tidak lengket.',
-                'Setelah santan cair menyusut, tuang santan kental. Aduk perlahan dan terus masak dengan api kecil.',
-                'Masak selama 2-3 jam sambil terus diaduk perlahan hingga santan mengering dan daging berwarna cokelat kehitaman.',
-                'Rendang siap disajikan saat minyak dari santan keluar dan daging sudah empuk serta kering sempurna.'
-            ],
-            tips: 'Kesabaran adalah kunci memasak rendang. Jangan pernah meninggalkan rendang tanpa diaduk karena bisa gosong. Semakin lama dimasak, semakin nikmat rasanya. Rendang juga semakin enak jika dipanaskan kembali keesokan harinya.'
-        },
-        'soto-ayam': {
-            emoji: '🍲',
-            gradient: 'linear-gradient(135deg, #DAA520 0%, #C41E3D 30%, #8B0000 100%)',
-            title: 'Soto Ayam Lamongan',
-            desc: 'Soto ayam adalah sup tradisional Indonesia dengan kuah kuning yang hangat dan gurih. Setiap daerah memiliki variasi soto yang berbeda, dan Soto Lamongan terkenal dengan cita rasanya yang khas berkat penggunaan koya (kerupuk udang yang dihaluskan).',
+            title: 'Ayam Bakar Kecap',
+            desc: 'Ayam bakar kecap merupakan hidangan khas Indonesia yang memiliki cita rasa manis, gurih, dan sedikit smoky dari proses pembakaran. Ayam dimasak menggunakan bumbu rempah hingga meresap, kemudian dibakar dengan olesan kecap hingga menghasilkan aroma yang menggugah selera.',
             time: '60 menit',
-            difficulty: 'Sedang',
-            servings: '4 porsi',
-            price: 'Rp 35.000',
+            difficulty: 'Mudah',
+            servings: '?',
+            price: 'Rp ?.000',
             ingredients: [
-                '500 gram ayam (paha dan dada)',
-                '1,5 liter air',
-                '5 butir bawang merah',
+                '½ KG ayam, potong sesuai selera',
+                '5 sendok makan kecap manis',
+                '2 lembar daun salam',
+                '1 batang serai',
+                '300 ml air',
+                '1 sendok makan air jeruk nipis',
+                'Garam dan gula secukupnya',
+                '5 siung bawang merah halus',
+                '3 siung bawang putih halus',
+                '3 butir kemiri',
+                '1 sendok teh ketumbar',
+                '1 ruas jahe'
+            ],
+            steps: [
+                'Cuci ayam hingga bersih, lalu lumuri dengan air jeruk nipis.',
+                'Haluskan seluruh bumbu halus.',
+                'Tumis bumbu hingga harum, masukkan daun salam dan serai.',
+                'Masukkan ayam, kecap manis, garam, gula, dan air.',
+                'Masak hingga ayam empuk dan bumbu meresap.',
+                'Bakar ayam sambil diolesi sisa bumbu hingga kecokelatan.',
+                'Sajikan bersama nasi hangat dan sambal.'
+            ],
+            tips: '?.'
+        },
+        'rendang-daging-sapi': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Rendang Daging Sapi',
+            desc: 'Rendang merupakan salah satu makanan khas Sumatera Barat yang terkenal dengan kekayaan rempahnya. Daging sapi dimasak bersama santan dan berbagai bumbu pilihan dalam waktu cukup lama hingga menghasilkan tekstur empuk serta cita rasa gurih, pedas, dan kaya rempah.',
+            time: '3-4 jam',
+            difficulty: 'Sulit',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '500 Gram daging sapi',
+                '1 liter santan',
+                '2 batang serai',
+                '4 lembar daun jeruk',
+                '2 lembar daun salam',
+                '1 lembar daun kunyit',
+                'garam secukupnya',
+                '8 siung bawang merah halus',
+                '5 siung bawang putih halus',
+                '5 buah cabai merah',
+                '3 butir kemiri',
+                '1 ruas jahe',
+                '2 ruas lengkuas',
+                '1 sendok teh ketumbar'
+            ],
+            steps: [
+                'Potong daging sapi sesuai ukuran yang diinginkan.',
+                'Haluskan seluruh bumbu.',
+                'Tumis bumbu hingga harum.',
+                'Masukkan santan, serai, daun jeruk, daun salam, dan daun kunyit.',
+                'Aduk perlahan hingga santan mulai mendidih.',
+                'Masukkan daging sapi dan masak menggunakan api kecil.',
+                'Aduk sesekali agar santan tidak pecah dan bagian bawah tidak gosong.',
+                'Masak hingga daging empuk dan bumbu mengental serta berwarna kecokelatan.'
+            ],
+            tips: '?.'
+        },
+        'ayam-geprek-sambal-bawang': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Ayam Geprek Sambal Bawang',
+            desc: 'Ayam geprek merupakan makanan populer yang menggabungkan ayam goreng tepung renyah dengan sambal bawang pedas. Ayam yang telah digoreng kemudian digeprek bersama sambal sehingga menghasilkan perpaduan rasa gurih, renyah, dan pedas.',
+            time: '40 Menit',
+            difficulty: 'Mudah',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '2 potong ayam',
+                '100 Gram tepung terigu',
+                '50 Gram tepung maizena',
+                '1 butir telur',
+                '½ sentok teh lada',
+                'Garam Secukupnya',
+                'Minyak goreng',
+                '10 buah cabai rawit',
                 '3 siung bawang putih',
-                '3 butir kemiri, sangrai',
-                '2 cm kunyit, bakar',
-                '1 cm jahe',
-                '2 batang serai, memarkan',
+                '½ sendok teh garam',
+                'Sedikit gula',
+                '2 sendok makan minyak panas',
+            ],
+            steps: [
+                'Bumbui ayam dengan garam dan lada.',
+                'Celupkan ayam ke dalam telur.',
+                'Balurkan ayam ke campuran tepung terigu dan maizena.',
+                'Goreng ayam hingga matang dan berwarna keemasan.',
+                'Haluskan cabai rawit, bawang putih, garam, dan gula.',
+                'Siram sambal dengan minyak panas.',
+                'Letakkan ayam di atas sambal dan geprek hingga sedikit hancur.',
+                'Sajikan dengan nasi putih dan lalapan.'
+            ],
+            tips: '?.'
+        },
+        'mie-goreng-jawa': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Mie Goreng Jawa',
+            desc: 'Mie goreng Jawa merupakan hidangan berbahan dasar mi yang dimasak dengan bumbu khas tradisional. Rasanya cenderung gurih dan manis dengan aroma bawang yang kuat. Tambahan telur, ayam, dan sayuran membuat hidangan ini semakin lengkap dan mengenyangkan.',
+            time: '25 Menit',
+            difficulty: 'Mudah',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '2 bungkus mi telur',
+                '2 butir telur',
+                '100 Gram ayam suwir',
+                '1 batang daun bawang',
+                '1 genggam kol',
+                '1 buah wortel',
+                '2 sendok makan kecap manis',
+                'Garam dan lada secukupnuya',
+                '4 siung bawang merah halus',
+                '3 siung bawang putih',
+                '2 butir kemiri',
+                '½ sendok teh merica',
+            ],
+            steps: [
+                'Rebus mi hingga setengah matang, kemudian tiriskan.',
+                'Tumis bumbu halus hingga harum.',
+                'Masukkan telur dan buat orak-arik.',
+                'Tambahkan ayam suwir dan sayuran.',
+                'Masukkan mi, kecap manis, garam, dan lada.',
+                'Aduk hingga seluruh bahan tercampur rata.',
+                'Masak hingga matang dan sajikan selagi hangat.',
+            ],
+            tips: '?.'
+        },
+        'soto-ayam-lemongan': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Soto Ayam Lamongan',
+            desc: 'Soto ayam Lamongan merupakan hidangan berkuah khas Jawa Timur dengan kuah kuning yang kaya rempah. Soto ini memiliki ciri khas taburan koya yang memberikan  tekstur dan cita rasa gurih. Hidangan ini biasanya disajikan dengan suwiran ayam, telur rebus, kol, dan soun.',
+            time: '60 Menit',
+            difficulty: 'Sedang',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '½ KG ayam',
+                '1,5 liter air',
+                '2 batang serai',
                 '3 lembar daun jeruk',
                 '2 lembar daun salam',
-                '100 gram soun/bihun, seduh air panas',
-                'Pelengkap: tauge, seledri, daun bawang, bawang goreng, jeruk nipis, sambal',
-                'Garam dan gula secukupnya',
-                'Telur rebus'
+                '100 Gram kol',
+                '100 Gram soun',
+                '2 butir telur rebus',
+                'Daun bawang dan seledri',
+                '6 siung bawang merah halus',
+                '4 siung bawang putih',
+                '3 butir kemiri',
+                '1 ruas kunyit',
+                '1 ruas jahe',
+                '1 sendok teh ketumbar'
             ],
             steps: [
-                'Rebus ayam dalam 1,5 liter air hingga matang. Angkat ayam dan suwir-suwir dagingnya. Saring kaldu dan sisihkan.',
-                'Haluskan bawang merah, bawang putih, kemiri, kunyit, dan jahe.',
-                'Panaskan minyak, tumis bumbu halus bersama serai, daun jeruk, dan daun salam hingga harum dan matang.',
-                'Masukkan tumisan bumbu ke dalam kaldu ayam. Aduk rata dan biarkan mendidih.',
-                'Tambahkan garam dan gula secukupnya. Masak selama 15-20 menit agar bumbu meresap sempurna.',
-                'Siapkan mangkuk saji: tata soun, tauge, dan suwiran ayam. Siram dengan kuah soto panas.',
-                'Taburi dengan bawang goreng, irisan seledri, dan daun bawang. Sajikan dengan jeruk nipis dan sambal.'
+                'Rebus ayam hingga matang, kemudian angkat dan suwir-suwir.',
+                'Tumis bumbu halus hingga harum.',
+                'Masukkan serai, daun jeruk, dan daun salam',
+                'Masukkan bumbu ke dalam air kaldu ayam',
+                'Tambahkan garam dan penyedap secukupnya',
+                'Masak hingga kuah mendidih dan bumbu meresap',
+                'Siapkan soun, kol, suwiran ayam, dan telur dalam manguk.',
+                'Siram dengan kuah panas dan tambahkan koya'
             ],
-            tips: 'Untuk kuah yang lebih bening dan gurih, gunakan api kecil saat merebus ayam dan buang busa yang muncul di permukaan. Tambahkan koya (campuran kerupuk udang halus dan bawang putih goreng) untuk cita rasa khas Lamongan.'
+            tips: '?.'
         },
-        'gado-gado': {
-            emoji: '🥗',
-            gradient: 'linear-gradient(135deg, #DAA520 0%, #3E2723 50%, #8B0000 100%)',
-            title: 'Gado-gado Jakarta',
-            desc: 'Gado-gado adalah salad tradisional Indonesia yang terdiri dari berbagai sayuran rebus dan bahan pelengkap, disiram dengan saus kacang yang gurih. Gado-gado Jakarta terkenal dengan saus kacangnya yang diulek langsung dan lontong yang lembut.',
+        'ikan-bahar-sambal-dabu-dabu': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Ikan Bakar Sambal Dabu-Dabu',
+            desc: 'Ikan bakar sambal dabu-dabu merupakan hidangan khas Manado yang memiliki perpaduan rasa gurih, segar, dan sedikit pedas. Ikan dibakar dengan bumbu sederhana, kemudian disajikan bersama sambal dabu-dabu yang terbuat dari cabai, tomat, bawang merah, dan jeruk nipis.',
+            time: '45 Menit',
+            difficulty: 'Sedang',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '2 ekor ikan nila atau gurame',
+                '2 sendok makan air jeruk nipis',
+                '3 siung bawang putih',
+                '1 sendok teh ketumbar',
+                'Garam secukupnya',
+                '2 sendok makan kecap manis',
+                'Minyak goreng secukupnya',
+                '5 buah cabai rawit',
+                '3 buah tomat',
+                '5 siung bawang merah',
+                '1 buah jeruk nipis',
+                '3 sendok makan minyak panas',
+            ],
+            steps: [
+                'Bersihkan ikan dan lumuri dengan jeruk nipis.',
+                'Haluskan bawang putih, ketumbar, dan garam.',
+                'Lumuri ikan dengan bumbu dan diamkan selama 15 menit.',
+                'Bakar ikan sambil diolesi kecap manis hingga matang.',
+                'Potong cabai, tomat, dan bawang merah untuk sambal.',
+                'Campurkan seluruh bahan sambal.',
+                'Tambahkan jeruk nipis, garam, dan minyak panas.',
+                'Sajikan sambal di atas ikan bakar.'
+            ],
+            tips: '?.'
+        },
+        'capcay-kuah-seafood': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Capcay Kuah Seafood',
+            desc: 'Capcay kuah seafood merupakan hidangan yang menggabungkan berbagai jenis sayuran dengan tambahan udang, bakso ikan, atau cumi. Kuahnya yang gurih dan hangat membuat makanan ini cocok menjadi menu makan siang maupun malam dengan kandungan sayuran yang beragam.',
+            time: '30 Menit',
+            difficulty: 'Mudah',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '100 Gram udang',
+                '100 Gram bakso ikan',
+                '1 buah wortel',
+                '100 Gram brokoli',
+                '100 Gram kembang kol',
+                '1 genggam sawi',
+                '2 siung bawang putih',
+                '½ buah bawang bombai',
+                '500 ml air',
+                '1 sendok makan saus tiram',
+                'Garam, gula, dan lada secukupnya',
+                '1 sendok makan tepung maizena, larutkan dengan sedikit air',
+            ],
+            steps: [
+                'Cuci bersih seluruh sayuran dan potong sesuai selera.',
+                'Tumis bawang putih dan bawang bombai hingga harum.',
+                'Masukkan udang dan bakso ikan.',
+                'Tambahkan air dan wortel, kemudian masak hingga agak empuk.',
+                'Masukkan brokoli, kembang kol, dan sawi.',
+                'Tambahkan saus tiram, garam, gula, dan lada.',
+                'Masukkan larutan maizena untuk mengentalkan kuah.',
+                'Masak hingga matang dan sajikan hangat.'
+            ],
+            tips: '?.'
+        },
+        'semur-daging-kentang': {
+            emoji: '🍚',
+            gradient: 'linear-gradient(135deg, #8B0000 0%, #C41E3D 50%, #DAA520 100%)',
+            title: 'Semur Daging Kentang',
+            desc: 'Semur daging kentang merupakan makanan tradisional Indonesia yang memiliki cita rasa manis dan gurih. Daging sapi dimasak bersama kentang dan kecap manis dengan tambahan rempah-rempah sehingga menghasilkan kuah kental beraroma khas. Hidangan ini sangat cocok disantap bersama nasi putih hangat.',
+            time: '75 Menit',
+            difficulty: 'Sedang',
+            servings: '?',
+            price: 'Rp ?.000',
+            ingredients: [
+                '300 gram daging sapi',
+                '2 buah kentang',
+                '5 sdm kecap manis',
+                '700 ml air',
+                '2 lembar daun salam',
+                '2 batang serai',
+                '1 ruas kayu manis',
+                'Garam dan gula secukupnya',
+                '5 siung bawang merah halus',
+                '4 siung bawang putih halus',
+                '3 butir kemiri halus',
+                '½ sdt pala bubuk halus',
+                '1 sdt merica halus'
+            ],
+            steps: [
+                'Potong daging sapi dan kentang sesuai selera.',
+                'Tumis bumbu halus hingga harum.',
+                'Masukkan daun salam, serai, dan kayu manis.',
+                'Masukkan daging sapi dan aduk hingga berubah warna.',
+                'Tambahkan air, kecap manis, garam, dan gula.',
+                'Masak hingga daging mulai empuk.',
+                'Masukkan kentang dan lanjutkan memasak hingga semua bahan matang.',
+                'Sajikan dengan nasi putih hangat.'
+            ],
+            tips: '?.'
+        },
+        'pisang-goreng-crispy': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Pisang Goreng Crispy',
+            desc: 'Pisang goreng crispy adalah camilan berbahan dasar pisang yang dibalut adonan tepung, lalu digoreng hingga keemasan. Bagian luarnya renyah, sedangkan bagian dalamnya lembut dan manis.',
+            time: '15-20 menit',
+            difficulty: 'Mudah',
+            servings: '? porsi',
+            price: 'Rp ?.000',
+            ingredients: [
+                '5 buah pisang kepok',
+                '100 gram tepung terigu',
+                '2 sdm tepung beras',
+                '1 sdm gula',
+                'Sejumput garam',
+                'Air secukupnya',
+                'Tepung panir secukupnya',
+                'Minyak goreng'
+            ],
+            steps: [
+                'Kupas pisang dan belah menjadi dua bagian.',
+                'Campurkan tepung terigu, tepung beras, gula, garam, dan air hingga menjadi adonan.',
+                'Celupkan pisang ke dalam adonan tepung.',
+                'Balurkan pisang dengan tepung panir.',
+                'Goreng hingga berwarna kuning keemasan.',
+                'Angkat dan sajikan selagi hangat.'
+            ],
+            tips: '?'
+        },
+        'cireng-bumbu-rujak': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Cireng Bumbu Rujak',
+            desc: 'Cireng merupakan camilan khas Jawa Barat yang terbuat dari tepung tapioka atau aci. Teksturnya kenyal di bagian dalam dan renyah di bagian luar. Cireng nikmat disajikan dengan bumbu rujak bercita rasa pedas, manis, dan asam.',
             time: '30 menit',
             difficulty: 'Mudah',
-            servings: '3 porsi',
-            price: 'Rp 20.000',
+            servings: '? porsi',
+            price: 'Rp ?.000',
             ingredients: [
-                '200 gram kacang tanah, goreng',
-                '5 buah cabai rawit merah',
-                '2 siung bawang putih, goreng',
-                '3 sendok makan air asam jawa',
-                '2 sendok makan gula merah, sisir',
-                '1 sendok teh garam',
-                '150 ml air matang',
-                '100 gram kangkung, rebus',
-                '100 gram kol, rebus',
-                '100 gram tauge, rebus',
-                '2 buah tahu putih, goreng dan potong',
-                '2 potong tempe, goreng',
-                '2 buah kentang, rebus dan iris',
-                '2 butir telur, rebus dan belah',
-                'Lontong secukupnya',
-                'Kerupuk dan bawang goreng'
+                '200 gram tepung tapioka',
+                '2 sdm tepung terigu',
+                '2 siung bawang putih',
+                '1 batang daun bawang',
+                'Garam dan penyedap secukupnya',
+                '200 ml air',
+                'Minyak goreng'
             ],
             steps: [
-                'Ulek kacang tanah goreng bersama cabai rawit, bawang putih goreng, dan garam hingga halus.',
-                'Tambahkan gula merah sisir dan air asam jawa, ulek rata.',
-                'Tuang air sedikit demi sedikit sambil terus mengaduk hingga mencapai kekentalan yang diinginkan.',
-                'Siapkan piring saji. Tata sayuran rebus (kangkung, kol, tauge), kentang, tahu, dan tempe.',
-                'Tambahkan potongan lontong dan telur rebus.',
-                'Siram dengan saus kacang secukupnya.',
-                'Taburi dengan bawang goreng dan sajikan dengan kerupuk.'
+                'Haluskan bawang putih, lalu rebus bersama air, garam, dan penyedap.',
+                'Campurkan tepung tapioka, tepung terigu, dan daun bawang.',
+                'Tuangkan air berbumbu sedikit demi sedikit sambil diaduk.',
+                'Bentuk adonan sesuai selera.',
+                'Goreng dengan api sedang hingga matang.',
+                'Haluskan cabai rawit, gula merah, air asam jawa, dan garam. Tambahkan sedikit air, lalu sajikan bersama cireng.'
             ],
-            tips: 'Rahasia saus gado-gado yang nikmat ada pada keseimbangan rasa gurih, manis, asam, dan pedas. Gunakan kacang tanah yang baru digoreng untuk aroma yang lebih harum. Saus akan lebih nikmat jika diulek, bukan diblender.'
+            tips: '?'
         },
-        'bakso': {
-            emoji: '🍜',
-            gradient: 'linear-gradient(135deg, #C41E3D 0%, #8B0000 50%, #3E2723 100%)',
-            title: 'Bakso Sapi Malang',
-            desc: 'Bakso adalah makanan favorit masyarakat Indonesia yang terdiri dari bola-bola daging sapi yang kenyal, disajikan dalam kuah kaldu yang gurih bersama mie, bihun, dan tahu. Bakso Malang terkenal dengan variasi isian dan topping yang beragam.',
-            time: '90 menit',
-            difficulty: 'Sedang',
-            servings: '5 porsi',
-            price: 'Rp 40.000',
+        'bolu-kukus-mekar': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Bolu Kukus Mekar',
+            desc: 'Bolu kukus mekar adalah kue tradisional yang bentuknya menyerupai bunga mekar. Teksturnya lembut dan empuk dengan rasa manis. Cocok disajikan sebagai teman minum teh atau kopi.',
+            time: '30 menit',
+            difficulty: 'Mudah',
+            servings: '? porsi',
+            price: 'Rp ?.000',
             ingredients: [
-                '500 gram daging sapi giling (tanpa lemak)',
-                '100 gram tepung tapioka',
-                '4 siung bawang putih, haluskan',
+                '250 gram tepung terigu',
+                '200 gram gula pasir',
+                '2 butir telur',
+                '150 ml air soda',
+                '1 sdt emulsifier',
+                '1 sdt vanili',
+                'Pewarna makanan sesuai selera',
+            ],
+            steps: [
+                'Campurkan telur, gula, dan emulsifier.',
+                'Mixer hingga adonan mengembang dan kental.',
+                'Masukkan tepung terigu dan air soda secara bergantian.',
+                'Bagi adonan menjadi beberapa bagian, lalu tambahkan pewarna.',
+                'Tuangkan adonan ke dalam cetakan bolu kukus.',
+                'Kukus sekitar 15–20 menit dalam kukusan yang sudah panas.',
+                'Angkat dan dinginkan sebelum disajikan.'
+            ],
+            tips: '?'
+        },
+        'tahu-crispy': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Tahu Crispy',
+            desc: 'Tahu crispy adalah camilan dari tahu putih yang dipotong kecil dan dilapisi adonan tepung berbumbu. Hasilnya gurih, renyah di luar, dan lembut di dalam. Bisa disajikan dengan saus sambal atau cabai bubuk.',
+            time: '25 menit',
+            difficulty: 'Mudah',
+            servings: '? porsi',
+            price: 'Rp ?.000',
+            ingredients: [
+                '5 buah tahu putih',
+                '100 gram tepung terigu',
+                '2 sdm tepung maizena',
+                '2 siung bawang putih',
+                'Garam secukupnya',
+                'Merica secukupnya',
+                'Air secukupnya',
+                'Minyak goreng'
+            ],
+            steps: [
+                'Potong tahu menjadi ukuran kecil.',
+                'Haluskan bawang putih, garam, dan merica.',
+                'Campurkan tepung terigu dan maizena dengan bumbu.',
+                'Tambahkan air hingga menjadi adonan cair.',
+                'Celupkan tahu ke dalam adonan.',
+                'Goreng hingga berwarna keemasan dan renyah.',
+                'Sajikan bersama saus sambal atau kecap.'
+            ],
+            tips: '?'
+        },
+        'popcorn-caramel': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Popcorn Caramel',
+            desc: 'Popcorn caramel dibuat dari jagung khusus popcorn yang mengembang ketika dipanaskan, kemudian dilapisi karamel. Rasanya manis dengan tekstur renyah, cocok dinikmati saat menonton film atau berkumpul bersama teman.',
+            time: '20 menit',
+            difficulty: 'Mudah',
+            servings: '? porsi',
+            price: 'Rp ?.000',
+            ingredients: [
+                '100 gram jagung popcorn',
+                '2 sdm margarin',
+                '100 gram gula pasir',
+                '2 sdm air',
+                '1 sdm margarin tambahan'
+            ],
+            steps: [
+                'Panaskan margarin dalam panci.',
+                'Masukkan jagung popcorn dan tutup panci.',
+                'Tunggu hingga jagung mengembang dan suara letupannya berhenti.',
+                'Lelehkan gula bersama air menggunakan api kecil.',
+                'Tambahkan margarin dan aduk hingga menjadi karamel.',
+                'Tuangkan karamel ke popcorn, lalu aduk hingga merata.',
+                'Dinginkan sebelum disajikan.'
+            ],
+            tips: '?'
+        },
+        'risol-mayo': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Risol Mayo',
+            desc: 'Risol mayo adalah camilan berkulit tipis dengan isian mayones, telur, sosis, dan keju. Bagian luarnya dilapisi tepung panir lalu digoreng hingga renyah. Rasanya gurih dan creamy.',
+            time: '45-60 menit',
+            difficulty: 'Sedang',
+            servings: '? porsi',
+            price: 'Rp ?.000',
+            ingredients: [
+                'Kulit: 150 gram tepung terigu, 1 butir telur, 300 ml air, 1 sdm minyak, dan sejumput garam.',
+                'Isian: 3 buah sosis, 2 butir telur rebus, mayones secukupnya, dan keju parut secukupnya.',
+                'Pelapis: 1 butir telur dan tepung panir secukupnya.'
+            ],
+            steps: [
+                'Campurkan tepung terigu, telur, air, minyak, dan garam hingga rata.',
+                'Buat kulit risol tipis menggunakan teflon.',
+                'Potong sosis dan telur rebus menjadi bagian kecil.',
+                'Letakkan isian, mayones, dan keju di atas kulit.',
+                'Lipat kulit hingga membentuk risol.',
+                'Celupkan ke dalam telur, lalu balurkan tepung panir.',
+                'Goreng hingga berwarna keemasan dan sajikan.'
+            ],
+            tips: '?'
+        },
+        'sosis-gulung-mie': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Sosis Gulung Mie',
+            desc: 'Sosis gulung mie merupakan camilan praktis yang menggabungkan sosis dan mi instan. Sosis dililit mi, kemudian digoreng hingga bagian luarnya renyah. Cocok untuk bekal maupun camilan bersama teman.',
+            time: '30 menit',
+            difficulty: 'Mudah',
+            servings: '? porsi',
+            price: 'Rp ?.000',
+            ingredients: [
+                '5 buah sosis',
+                '1 bungkus mi instan',
                 '1 butir telur',
-                '2 sendok teh garam',
-                '1 sendok teh merica bubuk',
-                '1 sendok makan bawang putih goreng',
-                '100 ml air es',
-                'Kuah: 2 liter kaldu sapi',
-                'Kuah: 5 siung bawang putih goreng',
-                'Kuah: garam dan merica secukupnya',
-                'Pelengkap: mie kuning, bihun, tahu goreng',
-                'Pelengkap: daun seledri, bawang goreng',
-                'Sambal dan kecap manis'
+                'Minyak goreng',
+                'Saus sambal dan saus tomat'
             ],
             steps: [
-                'Campurkan daging sapi giling, bawang putih halus, garam, merica, dan telur. Aduk rata dengan tangan atau food processor.',
-                'Masukkan tepung tapioka sedikit demi sedikit sambil terus diaduk hingga adonan kalis dan bisa dibentuk.',
-                'Tambahkan air es sedikit demi sedikit untuk memudahkan adonan dibentuk bulat.',
-                'Siapkan panci berisi air mendidih. Bentuk adonan menjadi bola-bola menggunakan tangan.',
-                'Masukkan bola bakso ke air mendidih. Bakso matang saat mengapung ke permukaan. Angkat dan tiriskan.',
-                'Untuk kuah: rebus kaldu sapi, tambahkan bawang putih goreng, garam, dan merica. Masak hingga mendidih.',
-                'Sajikan bakso dalam mangkuk dengan kuah panas, mie kuning, bihun, tahu goreng, seledri, dan bawang goreng.'
+                'Rebus mi hingga setengah matang, kemudian tiriskan.',
+                'Potong sosis menjadi dua bagian jika ukurannya besar.',
+                'Kocok telur dalam wadah.',
+                'Lilitkan mi pada bagian tengah sosis.',
+                'Celupkan ke dalam telur agar mi lebih menempel.',
+                'Goreng hingga mi berwarna keemasan dan matang.',
+                'Sajikan dengan saus sambal atau saus tomat.'
             ],
-            tips: 'Kunci bakso kenyal adalah penggunaan air es saat menguleni adonan dan daging yang benar-benar segar. Jangan terlalu banyak tepung karena akan membuat bakso keras. Proses penggilingan daging yang halus juga sangat menentukan tekstur akhir.'
+            tips: '?'
         },
-        'sate-ayam': {
-            emoji: '🍢',
-            gradient: 'linear-gradient(135deg, #C41E3D 0%, #DAA520 50%, #3E2723 100%)',
-            title: 'Sate Ayam Madura',
-            desc: 'Sate ayam Madura adalah salah satu jenis sate paling populer di Indonesia. Potongan daging ayam yang ditusuk dan dipanggang di atas arang, disajikan dengan saus kacang manis yang khas dan irisan bawang merah serta lontong.',
-            time: '45 menit',
+        'klepon-isi-gula-merah': {
+            emoji: '🍌',
+            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
+            title: 'Klepon Isi Gula Merah',
+            desc: 'Klepon adalah jajanan tradisional berbentuk bola kecil berwarna hijau dari tepung ketan dan aroma pandan. Bagian tengahnya berisi gula merah, sedangkan bagian luarnya dilapisi kelapa parut. Rasanya manis dan gurih.',
+            time: '40 menit',
             difficulty: 'Sedang',
-            servings: '3 porsi',
-            price: 'Rp 30.000',
+            servings: '? porsi',
+            price: 'Rp ?.000',
             ingredients: [
-                '500 gram daging ayam paha, potong dadu',
-                '20 tusuk sate (rendam air)',
-                'Bumbu marinasi: 3 sdm kecap manis',
-                'Bumbu marinasi: 1 sdm minyak goreng',
-                'Bumbu marinasi: 1 sdt ketumbar bubuk',
-                'Bumbu marinasi: ½ sdt garam',
-                'Saus kacang: 200 gram kacang tanah goreng',
-                'Saus kacang: 5 buah cabai merah keriting',
-                'Saus kacang: 3 siung bawang putih',
-                'Saus kacang: 3 sdm kecap manis',
-                'Saus kacang: 1 sdm air jeruk nipis',
-                'Saus kacang: garam dan gula secukupnya',
-                'Pelengkap: lontong, irisan bawang merah, timun'
+                '250 gram tepung ketan',
+                '50 gram tepung beras',
+                '200 ml air pandan',
+                '100 gram gula merah',
+                '150 gram kelapa parut',
+                'Sejumput garam'
             ],
             steps: [
-                'Campurkan daging ayam dengan bumbu marinasi (kecap manis, minyak, ketumbar, garam). Diamkan 30 menit di kulkas.',
-                'Tusukkan potongan ayam ke tusuk sate, masing-masing 4-5 potong per tusuk.',
-                'Untuk saus kacang: haluskan kacang tanah goreng, cabai, dan bawang putih. Campurkan dengan kecap manis, air jeruk nipis, garam, gula, dan air secukupnya.',
-                'Panaskan arang atau grill. Panggang sate sambil dibolak-balik dan diolesi sisa bumbu marinasi.',
-                'Panggang hingga daging matang sempurna dan bagian pinggirnya sedikit gosong (sekitar 8-10 menit).',
-                'Sajikan sate dengan saus kacang, irisan bawang merah, potongan lontong, dan irisan timun.'
+                'Campurkan tepung ketan dan tepung beras.',
+                'Tuangkan air pandan sedikit demi sedikit hingga adonan bisa dibentuk.',
+                'Potong gula merah menjadi bagian kecil.',
+                'Ambil sedikit adonan, pipihkan, lalu masukkan gula merah ke tengahnya.',
+                'Bulatkan adonan hingga gula merah tertutup rapat.',
+                'Rebus air hingga mendidih, lalu masukkan klepon.',
+                'Tunggu hingga klepon mengapung sebagai tanda matang.',
+                'Angkat dan gulingkan ke dalam kelapa parut yang sudah dikukus bersama sedikit garam.'
             ],
-            tips: 'Memanggang di atas arang akan memberikan aroma smoky yang khas. Kipas-kipas saat memanggang agar api merata. Jangan terlalu lama memanggang agar daging tidak kering. Marinasi lebih lama (2-3 jam) akan membuat rasa lebih meresap.'
+            tips: '?'
         },
         'es-cendol': {
             emoji: '🥤',
@@ -374,38 +668,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Tambahkan es batu secukupnya. Aduk rata dan sajikan segera.'
             ],
             tips: 'Kunci cendol yang kenyal adalah memasak adonan sampai benar-benar matang (transparan). Santan yang paling enak adalah santan segar yang baru diperas dari kelapa parut. Gula merah asli akan memberikan warna dan aroma yang lebih kaya.'
-        },
-        'pisang-goreng': {
-            emoji: '🍌',
-            gradient: 'linear-gradient(135deg, #DAA520 0%, #8B0000 50%, #C41E3D 100%)',
-            title: 'Pisang Goreng Crispy',
-            desc: 'Pisang goreng adalah camilan tradisional Indonesia yang sederhana namun sangat digemari. Pisang matang yang dibalut adonan tepung renyah kemudian digoreng hingga keemasan. Bisa disajikan polos atau dengan berbagai topping seperti keju, cokelat, atau gula halus.',
-            time: '15 menit',
-            difficulty: 'Mudah',
-            servings: '4 porsi',
-            price: 'Rp 12.000',
-            ingredients: [
-                '6 buah pisang raja/kepok matang',
-                '100 gram tepung terigu',
-                '30 gram tepung beras',
-                '2 sendok makan gula pasir',
-                '¼ sendok teh garam',
-                '½ sendok teh vanili bubuk',
-                '150 ml air es',
-                '1 sendok makan margarin, lelehkan',
-                'Minyak goreng untuk menggoreng',
-                'Topping opsional: keju parut, meses cokelat, gula halus, susu kental manis'
-            ],
-            steps: [
-                'Kupas pisang dan belah menjadi dua bagian memanjang (opsional: bisa juga dibiarkan utuh).',
-                'Campurkan tepung terigu, tepung beras, gula, garam, dan vanili. Aduk rata.',
-                'Tuang air es sedikit demi sedikit sambil diaduk hingga adonan tidak terlalu kental dan tidak terlalu encer.',
-                'Tambahkan margarin leleh, aduk rata. Diamkan adonan selama 5 menit.',
-                'Panaskan minyak goreng dengan api sedang. Celupkan pisang ke dalam adonan hingga terbalut rata.',
-                'Goreng pisang hingga keemasan dan renyah di kedua sisi (sekitar 3-4 menit per sisi).',
-                'Angkat dan tiriskan. Sajikan selagi hangat dengan topping favorit Anda.'
-            ],
-            tips: 'Gunakan pisang raja atau pisang kepok yang sudah matang sempurna untuk rasa manis alami. Air es akan membuat adonan lebih renyah. Pastikan minyak sudah cukup panas sebelum menggoreng agar hasilnya tidak berminyak. Goreng dengan api sedang agar matang merata.'
         }
     };
 
@@ -456,8 +718,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 '<h3 class="modal-section-title">🧂 Bahan-bahan</h3>' +
                 '<ul class="modal-ingredients">' + ingredientsHtml + '</ul>' +
                 '<h3 class="modal-section-title">👨‍🍳 Langkah Memasak</h3>' +
-                '<ol class="modal-steps">' + stepsHtml + '</ol>' +
-                '<div class="modal-tips"><h4>💡 Tips:</h4><p>' + data.tips + '</p></div>';
+                '<ol class="modal-steps">' + stepsHtml + '</ol>';
+                //+ '<div class="modal-tips"><h4>💡 Tips:</h4><p>' + data.tips + '</p></div>'; 
 
             lastFocus = btn;
             modalBody.scrollTop = 0;
