@@ -52,26 +52,312 @@
                 <button type="button" class="filter-btn" data-filter="minuman">Minuman</button>
                 <button type="button" class="filter-btn" data-filter="dessert">Dessert</button>
             </div>
-            <p class="recipe-result" aria-live="polite">Menampilkan <strong id="recipeCount">8</strong> resep</p>
+            <p class="recipe-result" aria-live="polite">Menampilkan <strong id="recipeCount">17</strong> resep</p>
 
             <div class="recipes-grid">
 
-                <!-- Resep 1 -->
-                <article class="recipe-card recipe-card-full" id="nasi-goreng" data-category="makanan-berat">
+
+                <!-- Resep 2 -->
+                <article class="recipe-card recipe-card-full" id="ayam-bakar-kecap" data-category="makanan-berat">
                     <div class="recipe-card-image">
                         <span class="recipe-card-badge">Makanan Berat</span>
                         <div class="recipe-card-overlay">
-                            <img src="images/nasi-goreng.svg" alt="Nasi goreng spesial dengan telur mata sapi" width="350" loading="lazy">
+                            <img src="images/ayam-bakar-kecap.png" alt="Ayam Bakar Kecap" width="350" loading="lazy">
                         </div>
                     </div>
                     <div class="recipe-card-body">
-                        <h2 class="recipe-card-title">Nasi Goreng Spesial</h2>
-                        <p class="recipe-card-desc">Raja masakan Indonesia yang mendunia. Nasi goreng dengan bumbu rahasia yang membuat ketagihan.</p>
+                        <h2 class="recipe-card-title">Ayam Bakar Kecap</h2>
+                        <p class="recipe-card-desc">Ayam bakar kecap merupakan hidangan khas Indonesia yang memiliki cita rasa manis, gurih, dan sedikit smoky dari proses pembakaran.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 60 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="ayam-bakar-kecap">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 3 -->
+                <article class="recipe-card recipe-card-full" id="rendang-daging-sapi" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/rendang-daging-sapi.png" alt="Rendang Daging Sapi" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Rendang Daging Sapi</h2>
+                        <p class="recipe-card-desc">Rendang merupakan salah satu makanan khas Sumatera Barat yang terkenal dengan kekayaan rempahnya.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 3-4 jam</span>
+                            <span class="meta-item">📊 Sulit</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="rendang-daging-sapi">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 4 -->
+                <article class="recipe-card recipe-card-full" id="ayam-geprek-sambal-bawang" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/ayam-geprek-sambal-bawang.png" alt="Ayam Geprek Sambal Bawang" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Ayam Geprek Sambal Bawang</h2>
+                        <p class="recipe-card-desc">Ayam geprek merupakan makanan populer yang menggabungkan ayam goreng tepung renyah dengan sambal bawang pedas.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 40 Menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="ayam-geprek-sambal-bawang">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 5 -->
+                <article class="recipe-card recipe-card-full" id="mie-goreng-jawa" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/mie-goreng-jawa.png" alt="Mie Goreng Jawa" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Mie Goreng Jawa</h2>
+                        <p class="recipe-card-desc">Mie goreng Jawa merupakan hidangan berbahan dasar mi yang dimasak dengan bumbu khas tradisional. Rasanya cenderung gurih dan manis dengan aroma bawang yang kuat.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 25 Menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="mie-goreng-jawa">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 6 -->
+                <article class="recipe-card recipe-card-full" id="soto-ayam-lamongan" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/soto-ayam-lamongan.png" alt="Soto Ayam Lamongan" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Soto Ayam Lamongan</h2>
+                        <p class="recipe-card-desc">Soto ayam Lamongan merupakan hidangan berkuah khas Jawa Timur dengan kuah kuning yang kaya rempah. Soto ini memiliki ciri khas taburan koya yang memberikan  tekstur dan cita rasa gurih.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 60 Menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="soto-ayam-lamongan">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 7 -->
+                <article class="recipe-card recipe-card-full" id="ikan-bakar-sambal-dabu-dabu" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/ikan-bakar-sambal-dabu.png" alt="Ikan Bakar Sambal Dabu-Dabu" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Ikan Bakar Sambal Dabu-Dabu</h2>
+                        <p class="recipe-card-desc">Ikan bakar sambal dabu-dabu merupakan hidangan khas Manado yang memiliki perpaduan rasa gurih, segar, dan sedikit pedas.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 45 Menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="ikan-bakar-sambal-dabu-dabu">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 8 -->
+                <article class="recipe-card recipe-card-full" id="capcay-kuah-seafood" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/capcay-kuah-seafood.png" alt="Capcay Kuah Seafood" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Capcay Kuah Seafood</h2>
+                        <p class="recipe-card-desc">Capcay kuah seafood merupakan hidangan yang menggabungkan berbagai jenis sayuran dengan tambahan udang, bakso ikan, atau cumi.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 30 Menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="capcay-kuah-seafood">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 9 -->
+                <article class="recipe-card recipe-card-full" id="semur-daging-kentang" data-category="makanan-berat">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Berat</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/semur-daging-kentang.png" alt="Semur Daging Kentang" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Semur Daging Kentang</h2>
+                        <p class="recipe-card-desc">Semur daging kentang merupakan makanan tradisional Indonesia yang memiliki cita rasa manis dan gurih.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 75 Menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="capcay-kuah-seafood">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 10 -->
+                <article class="recipe-card recipe-card-full" id="pisang-goreng-crispy" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/pisang-goreng-crispy.png" alt="Pisang Goreng Crispy" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Pisang Goreng Crispy</h2>
+                        <p class="recipe-card-desc">Pisang goreng crispy adalah camilan berbahan dasar pisang yang dibalut adonan tepung, lalu digoreng hingga keemasan.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 15-20 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="pisang-goreng-crispy">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 11 -->
+                <article class="recipe-card recipe-card-full" id="cireng-bumbu-rujak" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/cireng-bumbu-rujak.png" alt="Cireng Bumbu Rujak" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Cireng Bumbu Rujak</h2>
+                        <p class="recipe-card-desc">Cireng merupakan camilan khas Jawa Barat yang terbuat dari tepung tapioka atau aci. Teksturnya kenyal di bagian dalam dan renyah di bagian luar.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 30 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="cireng-bumbu-rujak">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 12 -->
+                <article class="recipe-card recipe-card-full" id="tahu-crispy" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/tahu-crispy.png" alt="Tahu Crispy" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Tahu Crispy</h2>
+                        <p class="recipe-card-desc">Tahu crispy adalah camilan dari tahu putih yang dipotong kecil dan dilapisi adonan tepung berbumbu.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 25 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="tahu-crispy">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 13 -->
+                <article class="recipe-card recipe-card-full" id="popcorn-caramel" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/popcorn-caramel.png" alt="Popcorn Caramel" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Popcorn Caramel</h2>
+                        <p class="recipe-card-desc">Popcorn caramel dibuat dari jagung khusus popcorn yang mengembang ketika dipanaskan, kemudian dilapisi karamel.</p>
                         <div class="recipe-card-meta">
                             <span class="meta-item">⏱️ 20 menit</span>
                             <span class="meta-item">📊 Mudah</span>
                         </div>
-                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="nasi-goreng">Lihat Detail</button>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="popcorn-caramel">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 14 -->
+                <article class="recipe-card recipe-card-full" id="risol-mayo" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/risol-mayo.png" alt="Risol Mayo" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Risol Mayo</h2>
+                        <p class="recipe-card-desc">Risol mayo adalah camilan berkulit tipis dengan isian mayones, telur, sosis, dan keju. Bagian luarnya dilapisi tepung panir lalu digoreng hingga renyah.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 45-60 menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="risol-mayo">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 15 -->
+                <article class="recipe-card recipe-card-full" id="sosis-gulung-mie" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/sosis-gulung-mie.png" alt="Sosis Gulung Mie" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Sosis Gulung Mie</h2>
+                        <p class="recipe-card-desc">Sosis gulung mie merupakan camilan praktis yang menggabungkan sosis dan mi instan. Sosis dililit mi, kemudian digoreng hingga bagian luarnya renyah.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 30 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="sosis-gulung-mie">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 16 -->
+                <article class="recipe-card recipe-card-full" id="bolu-kukus-mekar" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/bolu-kukus-mekar.png" alt="Bolu Kukus Mekar" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Bolu Kukus Mekar</h2>
+                        <p class="recipe-card-desc">Bolu kukus mekar adalah kue tradisional yang bentuknya menyerupai bunga mekar. Teksturnya lembut dan empuk dengan rasa manis.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 30 menit</span>
+                            <span class="meta-item">📊 Mudah</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="bolu-kukus-mekar">Lihat Detail</button>
+                    </div>
+                </article>
+
+                <!-- Resep 16 -->
+                <article class="recipe-card recipe-card-full" id="klepon-isi-gula-merah" data-category="makanan-ringan">
+                    <div class="recipe-card-image">
+                        <span class="recipe-card-badge">Makanan Ringan</span>
+                        <div class="recipe-card-overlay">
+                            <img src="images/klepon-isi-gula-merah.png" alt="Klepon Isi Gula Merah" width="350" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="recipe-card-body">
+                        <h2 class="recipe-card-title">Klepon Isi Gula Merah</h2>
+                        <p class="recipe-card-desc">Klepon adalah jajanan tradisional berbentuk bola kecil berwarna hijau dari tepung ketan dan aroma pandan.</p>
+                        <div class="recipe-card-meta">
+                            <span class="meta-item">⏱️ 40 menit</span>
+                            <span class="meta-item">📊 Sedang</span>
+                        </div>
+                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="klepon-isi-gula-merah">Lihat Detail</button>
                     </div>
                 </article>
 
@@ -91,25 +377,6 @@
                             <span class="meta-item">📊 Mudah</span>
                         </div>
                         <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="es-cendol">Lihat Detail</button>
-                    </div>
-                </article>
-
-                <!-- Resep 3 -->
-                <article class="recipe-card recipe-card-full" id="pisang-goreng" data-category="makanan-ringan">
-                    <div class="recipe-card-image">
-                        <span class="recipe-card-badge">Makanan Ringan</span>
-                        <div class="recipe-card-overlay">
-                            <img src="images/pisang-goreng.svg" alt="Pisang goreng krispi" width="350" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="recipe-card-body">
-                        <h2 class="recipe-card-title">Pisang Goreng Crispy</h2>
-                        <p class="recipe-card-desc">Pisang matang berbalut tepung renyah, digoreng keemasan. Camilan sederhana yang selalu digemari.</p>
-                        <div class="recipe-card-meta">
-                            <span class="meta-item">⏱️ 15 menit</span>
-                            <span class="meta-item">📊 Mudah</span>
-                        </div>
-                        <button type="button" class="btn btn-outline btn-sm recipe-detail-btn" data-recipe="pisang-goreng">Lihat Detail</button>
                     </div>
                 </article>
 
